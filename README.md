@@ -4,8 +4,8 @@
 
 - [Next.js](https://nextjs.org/)
 - [React](https://reactjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/) (opsional)
-- [TypeScript](https://www.typescriptlang.org/) (jika menggunakan TypeScript)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
 
 ## Instalasi
 
