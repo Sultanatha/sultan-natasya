@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  touch-action: pan-x pan-y;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@keyframes infiniteAnimation1 {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  50.1% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes infiniteAnimation2 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+.wrapper .slide-container {
+  width: 520%;
+}
+.wrapper .slide-container .slide-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.wrapper .slide-container .slide {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.wrapper .slide-container .slide-original {
+  animation: 25s linear infinite normal none running infiniteAnimation1;
+}
+
+.wrapper .slide-container .slide-clone {
+  animation: 25s linear infinite infiniteAnimation2;
+}
+
+.arcodion-content {
+  transition: max-height 3s ease-out;
+}
+
+.arcodion-content-close {
+  transition: max-height 0.3s ease-out;
+}
+
+.fade-in {
+  animation: fadein 0.3s;
+}
+
+.fade-out {
+  animation: fadeout 0.3s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .h-screen {
+    height: -webkit-fill-available;
+  }
+
+  .min-h-screen {
+    min-height: -webkit-fill-available;
+  }
+
+  .max-h-screen {
+    max-height: -webkit-fill-available;
+  }
+}
+
+.slideup-container {
+  position: relative;
+  overflow: hidden;
+  width: auto;
+}
+
+.slideup-container .active {
+  animation: slideUp 1.5s;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
