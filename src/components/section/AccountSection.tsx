@@ -91,7 +91,7 @@ const AccountSection = ({ onDone }: { onDone: () => void }) => {
                 name="Sultan Atha Naufal"
                 bankInfo={{
                   bankName: "BCA",
-                  accountNumber: "1370012457921",
+                  accountNumber: "2460963811",
                 }}
               />
               {/* <Spacing size={1} />
@@ -118,15 +118,15 @@ const AccountSection = ({ onDone }: { onDone: () => void }) => {
                 name="Natasya Intan Permatasari"
                 bankInfo={{
                   bankName: "BCA",
-                  accountNumber: "0800884462",
+                  accountNumber: "2460723259",
                 }}
               />
               <Spacing size={1} />
               <Account
                 name="Natasya Intan Permatasari"
                 bankInfo={{
-                  bankName: "Shopeepay",
-                  accountNumber: "085870086472",
+                  bankName: "CIMB NIAGA",
+                  accountNumber: "707377543600",
                 }}
               />
               <Spacing size={1} />

@@ -99,15 +99,15 @@ const Whises: React.FC = () => {
       if (error) {
         throw error;
       }
-      console.log("Data fetched successfully:", data[0].timestamp);
+      console.log("Data fetched successfully:", data?.[0]?.timestamp);
 
       setComments(data || []);
     } catch (error) {
-      console.error("Error fetching comments:", error.message);
+      console.error("Error fetching comments:", error);
     } finally {
       setLoading(false);
     }
-  });
+  }, [supabase]);
 
   const handleSubmit = useCallback(
     async (e: React.FormEvent<HTMLFormElement>) => {
