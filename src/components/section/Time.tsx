@@ -168,8 +168,8 @@ const AddressSection = () => {
           <div className="text-center">
             <Text className="text-center">
               {timeLeft.days !== undefined ? (
-                <div className="countdown-display flex justify-center gap-5">
-                  <div className="countdown-item flex flex-col items-center border-2 border-black p-3 rounded-lg bg-white">
+                <div className="countdown-display flex flex-wrap justify-center gap-5">
+                  <div className="countdown-item flex flex-col items-center justify-between border-2 border-black p-2 rounded-lg bg-white">
                     <span
                       className={`countdown-number text-3xl font-bold ${BonVivantFont.className}`}
                     >
@@ -181,7 +181,7 @@ const AddressSection = () => {
                       Days
                     </span>
                   </div>
-                  <div className="countdown-item flex flex-col items-center border-2 border-black p-3 rounded-lg bg-white">
+                  <div className="countdown-item flex flex-col items-center border-2 border-black p-2 rounded-lg bg-white">
                     <span
                       className={`countdown-number text-3xl font-bold ${BonVivantFont.className}`}
                     >
@@ -193,7 +193,7 @@ const AddressSection = () => {
                       Hours
                     </span>
                   </div>
-                  <div className="countdown-item flex flex-col items-center border-2 border-black p-3 rounded-lg bg-white">
+                  <div className="countdown-item flex flex-col items-center border-2 border-black p-1 rounded-lg bg-white">
                     <span
                       className={`countdown-number text-3xl font-bold ${BonVivantFont.className}`}
                     >
@@ -205,7 +205,7 @@ const AddressSection = () => {
                       Minutes
                     </span>
                   </div>
-                  <div className="countdown-item flex flex-col items-center border-2 border-black p-3 rounded-lg bg-white">
+                  <div className="countdown-item flex flex-col items-center border-2 border-black p-1 rounded-lg bg-white">
                     <span
                       className={`countdown-number text-3xl font-bold ${BonVivantFont.className}`}
                     >
